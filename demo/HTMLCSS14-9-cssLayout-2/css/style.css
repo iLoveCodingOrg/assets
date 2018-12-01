@@ -1,0 +1,39 @@
+body{
+  background-color: #5fb9f2;
+}
+
+.wrapper{
+  background-color: #ffffff;
+  padding: 30px 30px 30px 30px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  margin: 30px 20px 10px 5px;
+  overflow: hidden;
+}
+
+main{
+  float:left;
+  background-color: #d38080;
+}
+
+aside{
+  width:100px;
+  float:right;
+  background-color: #afea9e;
+}
+
+
+footer{
+  clear:left;
+}
+
+
+
+
+
+
+
+
+
+

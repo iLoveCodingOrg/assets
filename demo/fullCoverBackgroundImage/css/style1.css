@@ -1,0 +1,20 @@
+html { 
+  background: url(../img/beach2.jpg) no-repeat center center fixed; 
+  background-size: cover;
+}
+
+
+
+
+
+body{
+  color: #fff;
+}
+
+.normal-container{
+  width: 600px;
+  margin: 0 auto;
+}
+.normal-row{
+  width:100%;
+}

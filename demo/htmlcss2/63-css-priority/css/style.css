@@ -1,0 +1,28 @@
+h1.another-class {
+  color: purple;
+}
+
+#some-id{
+  color: green !important;
+}
+
+.some-class {
+  color: red;
+}
+
+.another-class{
+  color: orange;
+}
+
+/* 
+------------------------
+-- CSS PRIORITY ORDER --
+------------------------
+!important
+inline
+id
+Specific over general
+class
+lower first
+------------------------
+*/

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style2.css" media="(min-width:900px)">
+  <link rel="stylesheet" href="print.css" media="print">
+  <title>Media Queries</title>
+  <style>
+    .box{
+      width: 500px;
+      height: 500px;
+      text-align: center;
+      vertical-align: middle;
+      display: table-cell;
+      border: 1px solid #000;
+      color: white;
+      font-size: 200%;
+      background-color: #333;
+    }
+    @media (min-width:400px) and (max-width:600px){
+      .box{
+        background-color: red;
+      }
+    }
+    
+/*
+    @media (min-width:900px){
+      background-color: blue;
+      font-size:300%
+    }
+*/
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    I am a box
+  </div>
+</body>
+</html>

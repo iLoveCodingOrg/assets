@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="" data-ng-app>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Binding &amp; Built in Directives in Angular</title>
+  <style>
+  body{
+    padding: 20px;
+    margin: 0;
+  }
+
+  .box{
+    border:1px solid #507cdd;
+    padding: 10px;
+    background-color: coral;
+  }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
+</head>
+
+<body>
+  <p data-ng-init="checky='iLoveCoding'"></p>
+  <p data-ng-init="name='Ali'"></p>
+  <input type="text" data-ng-model="name">
+  {{name}}
+  
+  <div class="{{name}}"> I am a div</div>
+  
+  <hr>
+  value of checky: {{checky}}
+  <input type="checkbox" data-ng-model="checky">
+  <div class="box" ng-show="checky">I am a box</div>  
+  
+</body>
+</html>

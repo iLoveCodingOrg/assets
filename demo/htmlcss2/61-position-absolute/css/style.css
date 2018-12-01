@@ -1,0 +1,23 @@
+*{
+  box-sizing: border-box; 
+}
+body{
+  margin: 0;
+  background-color: #8f8bff
+}
+.coupon{
+  position: relative;
+  margin: 20px auto;
+  width: 300px;
+  background-color: #ffffff;
+  text-align: center;
+  border: 10px dashed #9c07c1;
+  color: #3c0095;
+  padding: 20px;
+}
+
+.coupon img{
+  position: absolute;
+  bottom: -130px;
+  left: -130px;
+}

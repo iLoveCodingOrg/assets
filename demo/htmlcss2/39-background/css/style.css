@@ -1,0 +1,11 @@
+.bg{
+  padding: 10px;
+  border: 2px solid orange;
+  background: blue url('../rocks.jpg') center/contain no-repeat;
+  /* background-color: blue;
+  background-image: url('../rocks.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; */
+
+}

@@ -1,0 +1,28 @@
+table{
+  font-family: sans-serif;
+  width: 100%
+}
+
+thead{
+  background-color: #0daf3f;
+  color: #fff;
+}
+
+
+tfoot{
+  background-color: #0d52af;
+  color: #fff;
+}
+
+td, th {
+  padding: 9px;
+  text-align: center
+}
+
+.second-col{
+  width: 10%
+}
+
+tr > td:first-child{
+  width: 50%;
+}

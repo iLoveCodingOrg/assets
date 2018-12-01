@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Variables</title>
+</head>
+<body>
+<script type="text/javascript">
+    // 1. What the Variable?
+    // 2. Variable Scope
+
+    var a = "ABC";
+    console.log(a);
+
+    function func1(){
+        var a = "DEF";
+        console.log(a);
+
+        function func2(){
+            var a = "XYZ";
+            console.log(a);
+        }
+        func2();
+    }
+    func1();
+
+    console.log(a);
+
+
+    // 3. Global Variables
+</script>
+</body>
+</html>
+
+
+
+
+

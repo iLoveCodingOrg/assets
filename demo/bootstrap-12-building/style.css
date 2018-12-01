@@ -1,0 +1,35 @@
+.navbar-inverse {
+  background-color: rgb(226, 44, 44);
+  border-color: #c92626;
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav>li>a
+{
+  color: #FFFFFF;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  color: #fff;
+  background-color: #930101;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 3px;
+}
+
+.btn-danger {
+  color: #d4753a;
+  background-color: transparent;
+  border-color: #d4753a;
+}
+
+
+.alert-success {
+  background-color: #FFFFFF;
+  border-color: #d6e9c6;
+  border-width: 3px;
+}

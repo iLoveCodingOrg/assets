@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap-3.3.4/dist/css/bootstrap.css">
+  <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+  <script src="bootstrap-3.3.4/dist/js/bootstrap.min.js"></script>
+  <title>Customize Bootstrap With LESS CSS</title>
+  
+  <style>
+    body{
+      margin-top:50px;
+      margin-bottom:50px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Awesome Website</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+ </nav>
+
+  <div class="contained">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="jumbotron text-center">
+          <h1 class="lead">Hello, Welcome to Our Website</h1>
+          <a href="" class="btn btn-lg btn-success">
+            Click me please
+          </a>
+          
+          <a href="" class="btn btn-lg btn-primary">
+            Click me please
+          </a>
+          
+          <a href="" class="btn btn-lg btn-danger">
+            Click me please
+          </a>
+          
+          <a href="" class="btn btn-lg btn-default">
+            Click me please
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-push-4 col-md- col-md-8">
+        <div class="alert alert-success">
+          Welcome to our website
+        </div>
+        <h3>Hello Title is here</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent condimentum est in libero imperdiet vehicula. Sed convallis ex sed euismod scelerisque. Cras a fermentum tortor. Donec arcu mi, malesuada ac felis id, aliquet vulputate odio. Integer vulputate ornare tortor, cursus vestibulum erat hendrerit ut. Curabitur velit enim, suscipit ac nulla sit amet, venenatis tempor nibh. Fusce et lacus sit amet dolor</p>
+            
+        <div class="alert alert-info">
+          Be sure to subscribe to our list
+        </div>   
+        <hr>
+        <h3>Hello Title is here</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent condimentum est in libero imperdiet vehicula. Sed convallis ex sed euismod scelerisque. Cras a fermentum tortor. Donec arcu mi, malesuada ac felis id, aliquet vulputate odio. Integer vulputate ornare tortor, cursus vestibulum erat hendrerit ut. Curabitur velit enim, suscipit ac nulla sit amet, venenatis tempor nibh. Fusce et lacus sit amet dolor</p>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-sm-pull-8 col-md-pull-8 col-md-4">
+        <h4>Topic</h4>
+        <ul>
+          <li><a href=""><mark>Fun</mark>Fun</a></li>
+          <li><a href="">Sports</a></li>
+          <li><a href="">Health</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="text-center">Copyright &copy; 2015</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

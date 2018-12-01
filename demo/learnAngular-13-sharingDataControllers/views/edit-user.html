@@ -1,0 +1,24 @@
+<div class="col-xs-12">
+  <a ng-click="edit.gotoPage('/')">Home</a> |
+  <a ng-click="edit.gotoPage('/edit')">Edit</a>
+  <h2>Edit User</h2>
+  <p>
+    <input type="text" 
+      placeholder="Enter your Name"
+      class="form-control" 
+      ng-model="edit.name"><br>
+    
+    <input type="text"
+      placeholder="Enter your age"
+      class="form-control"
+      ng-model="edit.age"><br>
+    
+    <input type="text" 
+      placeholder="Enter your passion"
+      class="form-control"
+      ng-model="edit.passion"><br>
+      
+    <button
+      class="btn-success btn" ng-click="edit.save()">Save</button>
+  </p>    
+</div>

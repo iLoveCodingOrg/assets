@@ -1,0 +1,18 @@
+a{
+  color: blue;
+}
+a:visited{
+  color: brown;
+}
+
+a:hover{
+  background-color: fuchsia;
+}
+
+a:active{
+  background-color: yellow;
+}
+
+a:focus {
+  background-color: lightcoral;
+}

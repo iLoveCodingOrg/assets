@@ -1,0 +1,52 @@
+body{
+font-family: 'Helvetica Neue';
+background-color: #efefef;}
+
+a{color: blue;}
+
+div#main{
+width: 300px;
+margin: auto;
+background-color: white;
+border: 1px solid #ddd;
+padding: 10px;}
+
+.header{
+padding: 15px;
+font-size: 110%;
+background-color: #47AD54;
+color: #fff;}
+
+.content{
+margin: 10px;}
+
+ul{
+font-size: 80%;}
+
+.experiment{
+padding:10px;
+background-color: #ddd;
+border: 1px solid #ddd;}
+
+.select{
+border: 1px solid green;
+padding: 5px;}
+
+.target{
+border: 1px solid red;
+padding: 5px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

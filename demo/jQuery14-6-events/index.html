@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Events</title>
+  <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div id="main" class="main-class">
+    <div class="header">
+      Events in jQuery
+    </div>
+
+    <div class="body">
+      <ul class="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    
+      <form action="">
+        <input type="text" placeholder="put email">
+        <input id="button" type="submit">
+      </form>
+      
+      <p>
+        Some gibberish text here is written.
+      </p>   
+    </div>
+
+    <div class="footer">
+      Copyright &copy; Company XYZ Inc.
+    </div>
+  </div>
+
+  <script>
+
+  $(document).ready(function(){
+
+    $('#button').on('click', function(){
+      alert('hello from jQuery');
+    })
+
+
+    // .click()
+    // .on()
+    // .mousenter()
+
+    $('ul').mouseenter(function(){
+      console.log('i am here on the UL');
+    });
+
+    $('ul').mouseleave(function(){
+      console.log('i am outta here from the UL');
+    });
+
+    $('ul')
+      .hover(
+        function(){
+          $(this).css('background-color','grey');
+        },
+        function(){
+          $(this).css('background-color','white');
+        }
+      );
+
+    // .mouseleave()
+    // .dblclick()
+
+
+    $('.footer').dblclick(function(){
+      $(this).text('I was double clicked');
+    });
+
+    $('.footer').on('dblclick click', myfunction);
+
+    function myfunction(){
+      myfunction2();
+      myfunc3();
+      $(this).text('I was double clicked');
+    }
+
+    function myfunction2(){
+      console.log('hi I am funtion2');
+    }
+
+    function myfunc3(){
+      console.log('hi I am funtion3');
+    }
+
+    // .focus()
+    // .blur()
+
+    $('input')
+      .focus(function(){
+        $(this).css('background-color','pink');
+      })
+      .blur(function(){
+        $(this).css('background-color','grey');
+      });
+
+    $('.footer').off('click');
+
+    // multiple different listeners
+    // .off()
+    // multiple triggers
+
+  });
+
+  </script>
+
+
+</body>
+</html>

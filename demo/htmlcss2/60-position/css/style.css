@@ -1,0 +1,38 @@
+*{
+  box-sizing: border-box; 
+}
+body{
+  margin: 0;
+  background-color: #ff8ba2
+}
+header, footer, main, aside, h1 {
+  background-color: #fff;
+  border: 2px solid #000000;
+  padding: 10px;
+  margin: 10px;
+}
+section{
+  width: 70%;
+}
+aside{
+  width: 25%;
+  float: right;
+}
+aside{
+  position: fixed;
+  right: 0;
+}
+h1{
+  position: sticky;
+  top: 10px;
+  left: 0px;
+}
+header{
+  position: relative;
+  top: -10px;
+  left: -10px;
+}
+footer{
+  position: sticky;
+  bottom: 0px;
+}

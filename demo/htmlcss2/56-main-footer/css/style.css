@@ -1,0 +1,41 @@
+body{
+  background-color: #4586de;
+  margin: 20px 0;
+  font-family: sans-serif;
+}
+
+.wrapper{
+  width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+header{
+  padding: 50px;
+}
+
+header > #logo{
+  font-size: 2em;
+}
+
+main{
+  padding: 50px;
+  overflow: hidden;
+}
+
+section{
+  width: 70%;
+  float: left;
+}
+
+aside{
+  width: 30%;
+  float:right;
+}
+
+footer{
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  text-align: center;
+}

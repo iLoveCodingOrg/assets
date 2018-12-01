@@ -1,0 +1,42 @@
+li:first-child{
+  color:red;
+}
+
+li:last-child{
+  color:blue;
+}
+
+li:nth-child(2){
+  color:green;
+}
+
+li:nth-last-child(2){
+  color:brown;
+}
+
+
+
+a:hover{
+  color: red;
+}
+
+a:visited{
+  color:aqua;
+}
+
+a:focus{
+  color: black;
+}
+
+a:active{
+  color:blue;
+}
+
+input:checked{
+  margin:10px;
+}
+
+input:disabled{
+  color:red;
+}
+

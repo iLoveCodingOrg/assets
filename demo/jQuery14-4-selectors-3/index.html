@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quering the DOM 3</title>
+  <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+  <style>
+    body{
+      font-family: 'Helvetica Neue';
+      background-color: #efefef;
+    }
+    div#main{
+      width: 300px;
+      margin: auto;
+      background-color: white;
+      border: 1px solid #999;
+      padding: 10px;
+    }
+    .header{
+      padding: 10px;
+      background-color: #999;
+      color: #fff;
+    }
+    .footer{
+      padding: 10px;
+      background-color: #cdc9cd;
+    }
+  </style>
+</head>
+<body>
+  
+  <div id="main" class="main-class">
+    <div class="header">
+      Company XYZ Inc.
+    </div>
+
+    <div class="body">
+      <ul class="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+
+      <p>
+        Some gibberish text here is written.
+      </p>
+    </div>
+
+    <div class="footer">
+      Copyright &copy; Company XYZ Inc.
+    </div>
+  </div>
+
+  <script>
+
+  $(document).ready(function(){
+
+
+    
+    // .sibling()
+    $('.header').siblings().css('color','red');
+
+    // .children()
+    $('ul').children().css('color','green');
+
+    // .parent()
+    // $('.footer').parent().css('background-color', 'blue');
+
+    // .first()
+    $('ul')
+      .children()
+      .last()
+      .css('text-transform','uppercase');
+
+    // .last()
+    
+    // .hasClass()
+    // .attr()
+
+  });
+
+
+  </script>
+
+
+</body>
+</html>

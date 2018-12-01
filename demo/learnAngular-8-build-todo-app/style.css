@@ -1,0 +1,19 @@
+body{
+  padding: 20px;
+  margin: 0;
+}
+
+.completed-task{
+  text-decoration: line-through;
+}
+
+a{
+  color: cornflowerblue;
+}
+
+ul{
+  padding: 0;
+}
+li{
+  margin:0;
+}

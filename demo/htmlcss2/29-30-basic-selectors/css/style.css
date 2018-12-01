@@ -1,0 +1,32 @@
+#first{
+  color: black;
+}
+p{
+  color: red;
+  background-color: green;
+  font-size: 25px;
+  font-weight: normal;
+  letter-spacing: 10px;
+}
+h1{
+  color: blue;
+}
+h2{
+  color: brown;
+}
+
+.something{
+  background-color: blue;
+}
+
+a{
+  color: blue;
+}
+
+[target="_blank"]{
+  color: green;
+}
+
+*{
+  font-weight: normal;
+}

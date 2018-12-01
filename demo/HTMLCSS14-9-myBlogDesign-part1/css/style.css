@@ -1,0 +1,123 @@
+body{
+  background-color: #4586de;
+  font-size:120%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a{
+  color: #333;
+}
+
+a:hover{
+  color: #0062ff;
+}
+
+.wrapper{
+  background-color: #fff;
+  width: 1000px;
+  margin: 0 auto;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px; /* for old Konqueror browsers */
+}
+
+header .brand{
+  color: #666;
+  font-family: 'Pacifico', Georgia;
+  font-size:250%;
+  padding: 50px;
+}
+
+header .brand span{
+  font-family: 'Open Sans', sans-serif;
+  font-size:40%;
+  padding: 20px;
+}
+
+
+.hero{
+  height: 400px;
+  background: #68bba1 url('../img/illustration.jpg') center no-repeat;
+}
+
+content{
+  overflow: hidden;
+  display: block;
+  padding: 50px;
+}
+
+main{
+  float:left;
+  width: 70%
+}
+
+aside{
+  float:right;
+}
+
+aside .section{
+  background-color: #fdd761;
+  padding: 30px;
+  box-sizing: border-box;
+}
+aside .section h3{
+  background-color: #ff5353;
+  color: #fff;
+  padding: 20px;
+  margin-top:0; 
+}
+
+aside ul{
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+
+aside a{
+  padding: 10px 0;
+  display: block;
+}
+
+article{
+  margin-bottom: 60px;
+}
+
+article h2{
+  margin-bottom: 0;
+  font-size: 170%;
+  color: #333;
+  padding: 0;
+}
+
+article p{
+  margin-top: 10px;
+  font-size: 100%;
+  color: #333;
+  padding: 0;
+}
+
+
+
+
+footer{
+  text-align: center;
+  padding: 20px;
+  font-size: 90%;
+  clear:both;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

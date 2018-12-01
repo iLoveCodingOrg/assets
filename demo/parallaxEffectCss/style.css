@@ -1,0 +1,73 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+h1{
+  font: 300%/150% "Georgia";
+  color: #000;
+  text-align: center;
+  padding: 20px;
+  text-shadow: 0px 0px 10px #ffffff;
+}
+
+img{
+  width: 100vw;
+  height: 100vh;
+}
+
+.parallax-wrap{
+  perspective: 100px;
+  
+  /* for webkit based browsers such as Safari  */
+  -webkit-perspective: 100px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallaxing{
+  position: absolute;
+  top:0;
+  bottom:0;
+  right: 0;
+  left: 0;
+}
+
+.parallaxing.one{
+  z-index: 8;
+  transform: translateZ(-100px) scale(2);
+  
+  /* for webkit based browsers such as Safari  */
+  -webkit-transform: translateZ(-100px) scale(2);
+}
+.parallaxing.two{
+  z-index: 10;
+  transform: translateZ(-200px) scale(3)
+  
+  /* for webkit based browsers such as Safari  */
+  -webkit-transform: translateZ(-200px) scale(3);
+}
+.parallaxing.three{
+  z-index: 9;
+  margin-top: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

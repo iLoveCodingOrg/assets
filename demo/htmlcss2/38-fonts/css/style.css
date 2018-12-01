@@ -1,0 +1,19 @@
+body{
+  font-family: 'Roboto Condensed', Arial, Tahoma, sans-serif;
+}
+
+h1{
+  font-family: "Kosugi Maru", Georgia, 'Times New Roman', Times, serif
+}
+
+.more-space{
+  letter-spacing: 2px;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.bold{
+  font-weight: bold;
+}

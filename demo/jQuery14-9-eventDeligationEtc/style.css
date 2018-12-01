@@ -1,0 +1,21 @@
+body{
+font-family: 'Helvetica Neue';
+background-color: #efefef;}
+
+a{color: blue;}
+
+div#main{
+width: 300px;
+margin: auto;
+background-color: white;
+border: 1px solid #ddd;
+padding: 10px;}
+
+.header{
+padding: 15px;
+font-size: 110%;
+background-color: #47AD54;
+color: #fff;}
+
+.content{
+margin: 10px;}

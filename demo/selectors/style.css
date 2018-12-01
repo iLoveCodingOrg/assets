@@ -1,0 +1,12 @@
+body{
+  background-color: #cccccc;
+}
+
+.mySection{
+  font-weight: bold;
+  border: 2px solid blue;
+}
+
+#main{
+  font-family: Georgia;
+}

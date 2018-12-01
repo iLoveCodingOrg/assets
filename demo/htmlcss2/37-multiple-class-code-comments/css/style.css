@@ -1,0 +1,20 @@
+/* these are my notes */
+/* these are
+my muli-line
+comments */
+
+#some {
+  color: red;
+}
+
+.more-space{
+  letter-spacing: 2px;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.bold{
+  font-weight: bold;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Search</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="jumbotron text-center">
+          <h1>Book Search</h1>
+          <p class="lead">The world;s best book search engine</p>
+          <form id="searchForm" class="input-group">
+            <input type="text" class="form-control">
+            <div class="input-group-btn">
+              <input type="submit" class="btn btn-success" value="Search">
+            </div>
+          </form>
+        </div>
+        <div class="bookListContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function($){
+      $(document).ready(function(){
+        var searchForm = $('#searchForm')
+        var searchValue = $('#searchForm :input')[0]
+
+        searchForm.submit(function(event){
+          event.preventDefault()
+          callBookSearchApi(searchValue.value)
+        })
+
+      })
+    })(jQuery)
+
+
+    function callBookSearchApi(searchTerm){
+      // MAKE THE API CALL
+      console.log(searchTerm)
+      if(searchTerm){
+        $.ajax({
+          url: 'https://www.googleapis.com/books/v1/volumes?q='+searchTerm
+        })
+        .done(function(data){
+          // console.log(data)
+          var bookListContainer = $('.bookListContainer')
+          bookListContainer.empty()
+          prepareBookList(data.items)
+        })
+        .fail(function(err){
+          console.log(err)
+        })
+        .always(function(){
+          console.log('done')
+        })
+
+      }
+    }
+
+    function prepareBookList(bookList){
+      var bookListContainer = $('.bookListContainer')
+      console.log(bookList)
+      bookList.forEach(function(item){
+        // prepare each book element
+        bookListContainer.append(bookElement(item))
+      })
+    }
+
+    function bookElement(book){
+      console.log(book)
+      var bookElement = $('<div class="media book"><div class="media-left"></div><div class="media-body"></div></div>')
+      var title = $('<h2></h2>')
+      var bookCover = $('<img />')
+      var subTitle = $('<p class="lead"></p>')
+      var description = $('<p></p>')
+      var author = $('<p class="author"></p>')
+
+      title.text(book.volumeInfo.title)
+      bookCover.attr('src', (book.volumeInfo.imageLinks)? book.volumeInfo.imageLinks.thumbnail: '')
+      subTitle.text(book.volumeInfo.subTitle)
+      description.text(book.volumeInfo.description)
+      author.text(book.volumeInfo.author)
+      
+      bookElement
+        .find('.media-body')
+          .append(title)
+          .append(subTitle)
+          .append(description)
+          .append(author)
+      bookElement
+        .find('.media-left')
+          .append(bookCover)
+
+      return bookElement
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

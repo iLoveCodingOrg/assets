@@ -1,0 +1,79 @@
+@primaryColor: #4964fa;
+@defaultPad: 30px;
+
+body {
+  background-color: #c9c9c9;
+  font-family: sans-serif;
+  color: #333;
+}
+
+a {
+  color: #49a1fa;
+}
+
+.wrapper {
+  background-color: #ffffff;
+  padding: @defaultPad;
+}
+
+header {
+  background-color: @primaryColor;
+  color: #ffffff;
+  padding: @defaultPad;
+  font-size: 150%;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding: @defaultPad 0;
+  margin-top: 30px;
+}
+
+div.skills,
+div.bio {
+  margin-bottom: 40px;
+  
+  >p{
+    color:#999;
+  }
+}
+//
+//div.skills > p,
+//div.bio > p{
+//  color:red;
+//}
+
+.border(){
+  border: 1px solid @primaryColor;
+  border-radius: 3px;
+}
+
+.button {
+  background-color: @primaryColor;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 110%;
+  text-decoration: none;
+  display: inline-block;
+  .border();
+  
+  &:hover {
+    background-color: transparent;
+    color: @primaryColor;
+  }
+
+}
+
+.button-special{
+  .button();
+  color: red;
+}
+
+
+
+
+
+
+
+

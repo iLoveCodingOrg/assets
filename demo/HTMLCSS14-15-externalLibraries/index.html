@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rapid Development with External Libraries</title>
+  
+  <!-- jQuery library (served from Google) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <!-- bxSlider Javascript file -->
+  <script src="js/jquery.bxslider.min.js"></script>
+  
+  <!-- jquery UI Library-->
+  <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+  
+  <!-- bxSlider CSS file -->
+  <link href="js/jquery.bxslider.css" rel="stylesheet" />
+
+  <!-- jquery UI Theme-->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+
+  <style>
+    .bx-wrapper{
+      max-width: 600px !important; 
+    }
+  </style>
+</head>
+
+<body>
+  <p>Date: <input type="text" id="myDatepicker"></p>
+  <ul class="bxslider">
+    <li><img src="img/1.jpg" /></li>
+    <li><img src="img/2.jpg" /></li>
+    <li><img src="img/3.jpg" /></li>
+  </ul>
+  
+  
+
+
+
+<script>
+  
+  $(document).ready(function(){
+    $('.bxslider').bxSlider();
+  });
+  
+  $(function() {
+    $( "#myDatepicker" ).datepicker();
+  });
+</script>
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

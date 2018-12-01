@@ -1,0 +1,49 @@
+body{
+  color: #333;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 200%;
+  font-family: sans-serif;
+/*  font: normal 10px/200% sans-serif;*/
+
+  background-color: #FCFA90;
+  background-image: url('../bg.jpg');
+  background-repeat: repeat;
+  background-position: top right;
+/*  background: #FCFA90 url('../bg.jpg') top right repeat-x;*/
+}
+
+p.special{
+  text-align: right;
+  text-decoration:line-through;
+}
+
+.wrapper{
+  background-color: #fff;
+/*
+  border-width: 4px;
+  border-style: solid;
+  border-color: #3399cc;
+*/
+  border-top: 4px solid #3399cc;
+  border-bottom: 4px dotted #3399cc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

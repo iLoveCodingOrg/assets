@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Find Something AKA Quering the DOM 2</title>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <header class="myHeader">
+      <h1>Learning Advanced JQuery Selectors</h1>  
+    </header>
+
+    <section class="mySection">
+      <p>Some normal text. 
+        <span>
+          I am the child of P
+          <span>I am the child of span, but grandchild of P</span>
+        </span>
+      </p>
+      <p>second paragraph</p>
+      <p>third paragraph</p>
+
+      <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>fourth</li>
+        <li>fifth</li>
+      </ul>
+
+
+      <form action="">
+        <input type="text">
+        <input type="button" value="Click Me">
+        
+        <select name="" id="">
+          <option value="one">one</option>  
+          <option value="two" selected>two</option>  
+        </select>
+        
+
+      </form>
+      <button>I AM A BUTTON</button>
+    </section>
+
+    <footer style="display:none">
+      Copyright info Awesome Inc.
+    </footer>
+
+  </div>
+
+
+  <script>
+
+    jQuery(document).ready(function($){
+
+      // parent > child
+      // ancestor descendant
+
+      // $('span > span').css('text-decoration','underline');
+      // $('p span').css('color','blue');
+
+
+      // :first-child Selector
+      // :last-child Selector
+
+      $('ul > li:first-child').append(' i am the first child');
+      $('ul > li:last-child').append(' i am the last child');
+
+
+      // :nth-child() Selector
+      // :nth-last-child() Selector
+
+      $('ul > li:nth-child(2)').append('i am the second child');
+      $('ul > li:nth-last-child(2)').append('i am the second last child');
+
+      $('.mySection > p:nth-child(2)').css('background-color', 'yellow');
+
+      // :contains() Selector contains content
+      // :has() Selector: has elements
+
+      $('li:contains("three")').css('text-transform','uppercase');
+      $('section:has("p")').css('color','brown');
+
+      // :hidden
+      // :visible
+
+      $('*:hidden').show();
+      $('p:visible').hide();
+
+      // :focus
+
+      $('input[type="text"]').focus();
+      $('input:focus').css('background-color', 'pink');
+
+
+      // :button
+
+
+      $(':button').css('color','red');
+
+      // :selected
+
+      $(':selected').text('I am selected');
+
+    });
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

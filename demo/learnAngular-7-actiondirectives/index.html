@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="" ng-app="myApp">
+<head>
+  <title>Clickable Directives</title>
+  <style>
+  
+    body{
+      padding: 20px;
+      margin: 0;
+    }
+    .box{
+      border:2px solid #818181;
+      border-radius: 10px;
+      margin: 0 0 10px 0;
+      padding: 20px;
+    }
+
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
+
+</head>
+
+<body>
+  <div ng-controller="actionController as ac">
+    <div class="box">
+      {{ac.count}}
+      <form ng-submit="ac.addThis()">
+        <input type="text" ng-model="ac.tasksInput" ng-change="ac.counter()">
+        <input type="submit" value="Submit">
+        <button ng-click="ac.addThis()">Click me</button>
+        <button ng-dblclick="ac.addThis()">Double Click me</button>
+      </form>
+      <ul ng-repeat="task in ac.tasks">
+        <li>{{task}}</li>
+      </ul>
+    </div>
+  </div>
+  
+  <script>
+  
+    var app = angular.module('myApp', []);
+    app.controller('actionController', function(){
+      var ctr = this;
+      ctr.tasks = [];
+      ctr.count = 0;
+      
+      ctr.addThis = function(){
+        ctr.tasks.push(ctr.tasksInput);
+      };
+      
+      ctr.counter = function(){
+        ctr.count++;  
+      }
+    });
+  
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+.active{
+  background-color: chocolate
+}
+
+.active + a{
+  background-color: darkcyan;
+}
+
+.active ~ a {
+  font-weight: bold;
+}
+
+main p{
+  color: green;
+}
+
+main > p {
+  text-decoration: underline
+}

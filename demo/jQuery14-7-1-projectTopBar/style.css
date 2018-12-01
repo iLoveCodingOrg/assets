@@ -1,0 +1,86 @@
+body{
+font-family: 'Helvetica Neue';
+background-color: #efefef;
+}
+div#main{
+width: 300px;
+margin: auto;
+background-color: white;
+border: 1px solid #999;
+padding: 10px;
+}
+.header{
+padding: 10px;
+font-size: 110%;
+background-color: #999;
+color: #fff;
+}
+.footer{
+padding: 10px;
+font-size: 80%;
+background-color: #cdc9cd;
+}
+
+.topbar{
+display: none;
+position: absolute;
+top: 0;
+left: 0;
+padding: 10px;
+font-family: Georgia;
+font-size: 90%;
+text-align: center;
+border-bottom: 3px solid #fff;
+box-shadow: 0px 0px 5px #333;
+background-color: #eb583c;
+box-sizing: border-box;
+}
+
+.topbar a{
+text-decoration: none;
+color: #fff;
+}
+.topbar-bar{
+width: 100%;
+}
+.topbar-bar span{
+color: #fff;
+}
+
+.topbar-bar .promolink{
+margin-left: 10px;
+padding: 5px 7px;
+background-color: #333;
+color: #fff;
+border-radius: 4px;
+font-size: 80%;
+}
+.topbar-bar .promolink:hover{
+background-color: #666;
+}
+
+.topbar-bar .closelink{
+position: absolute;
+margin-left: 10px;
+padding: 5px 7px;
+top: 18%;
+right: 13px;
+font-family: sans-serif;
+font-size: 80%;
+color: #eb583c;
+text-decoration: none;
+text-align: center;
+background-color: #AA3C19;
+border-radius: 50%;
+}
+
+.topbar-lever{
+position: absolute;
+top: 0;
+left: auto !important;
+right: 8px;
+border-right: 3px solid #fff;
+border-left: 3px solid #fff;
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+}

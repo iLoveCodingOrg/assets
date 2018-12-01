@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Find Something AKA Quering the DOM</title>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <header class="mySection">
+      <h1>Hello World to our Awesome Page</h1>  
+    </header>
+
+    <section class="mySection">
+      <p>This is some small description about my webpage</p>
+    </section>
+
+    <aside id="main">
+      <ul>
+        <li class="specialLi"><a href="http://google.com">First link</a></li>
+        <li><a href="http://yahoo.com">Second link</a></li>
+      </ul>      
+    </aside>
+
+    <footer>
+      Copyright info Awesome Inc.
+    </footer>
+
+  </div>
+
+
+  <script>
+
+    jQuery(document).ready(function($){
+
+      $('#main, footer, .mySection').append('>>> Hello Aziz');
+
+    });
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Document</title>
+</head>
+<body>
+  <h1 class="header">Hello DOM Learners
+  <h2 id="what">Its Not Really That Complicated</h2>
+  <div class="content">
+    <p>Just watch and learn folks
+    <button onclick="pop()">Click me</button>
+  </div>
+</body>
+</html>
+
+
+
+
+<script>
+  var h1 = document.getElementById('what');
+  h1.innerHTML = 'New Header';
+
+  function pop(){
+    alert('You Clicked?');
+  }
+</script>
